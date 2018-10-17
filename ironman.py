@@ -12,3 +12,6 @@ print("""
 2. Go to bed.
 3. Get a coffee.
 """)
+choice = input("What do you do? ")
+if choice == "1":
+    print("hi")
