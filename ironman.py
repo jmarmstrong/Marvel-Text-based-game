@@ -14,4 +14,10 @@ print("""
 """)
 choice = input("What do you do? ")
 if choice == "1":
+    #complete
     print("hi")
+    time.sleep(1)
+if choice == "2":
+    #complete
+if choice == "3":
+    #complete
