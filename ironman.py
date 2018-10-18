@@ -1,4 +1,4 @@
-#ironman game file
+#ironman game file.
 import time
 import os
 counter = 0
@@ -22,7 +22,7 @@ if choice == "1":
     time.sleep(1.5)
     print("It explodes!!!")
     time.sleep(1)
-    print("You die. :( ")
+    print("You die. :(")
     time.sleep(2)
     print("Please try again.")
     time.sleep(2)
@@ -37,7 +37,29 @@ if choice == "1":
         exit()
 if choice == "2":
     counter += 1
-    print("hi ethan.")
+    print("You shut down your computer and go to your bedroom.")
 if choice == "3":
     counter += 1
-    print("hi")
+    print("You get up from your chair and leave the room.")
+    time.sleep(1)
+    print("You walk into the hall and turn on the coffee machine.")
+    time.sleep(2)
+    print("You grab a mug and turn back to the coffee machine.")
+    time.sleep(1)
+    print("You die. :(")
+    time.sleep(2)
+    print("You were hit in the face with boiling hot coffee.")
+    time.sleep(1)
+    print("The last through you know is the smell of strong coffee.")
+    time.sleep(1)
+    print("Please try again.")
+    time.sleep(2)
+    print("You survived" ,counter, "choices.")
+    time.sleep(3)
+    again = input("Do you want to play again? ")
+    if again == "yes":
+        time.sleep(2)
+        os.startfile("menu.py")
+    if again == "no":
+        time.sleep(3)
+        exit()
