@@ -1,8 +1,8 @@
-#ironman game file.
+#Ironman game file.
 import time
 import os
 counter = 0
-print("Hello, You have chosen to play as Ironman this particular time.")
+print("Hello brave player, You have chosen to play as Ironman this particular time.")
 time.sleep(2)
 print("You walk into your lab and log on to your computer (top of the range).")
 time.sleep(2)
@@ -38,6 +38,8 @@ if choice == "1":
 if choice == "2":
     counter += 1
     print("You shut down your computer and go to your bedroom.")
+    time.sleep(1)
+    #complete
 if choice == "3":
     counter += 1
     print("You get up from your chair and leave the room.")
