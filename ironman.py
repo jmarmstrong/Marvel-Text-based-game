@@ -23,17 +23,17 @@ if choice == "1":
     print("It explodes!!!")
     time.sleep(1)
     print("You die. :(")
-    time.sleep(2)
+    time.sleep(1)
     print("Please try again.")
-    time.sleep(2)
+    time.sleep(1)
     print("You survived" ,counter, "choices.")
-    time.sleep(3)
+    time.sleep(1)
     again = input("Do you want to play again? ")
     if again == "yes":
         time.sleep(2)
         os.startfile("menu.py")
     if again == "no":
-        time.sleep(3)
+        time.sleep(2)
         exit()
 if choice == "2":
     counter += 1
@@ -62,10 +62,31 @@ if choice == "2":
 """)
     choice2 = input("What do you do? ")
     if choice2 == "1":
-        #complete
+        counter += 1
+        print("You lay back against a rock and close your eyes.")
+        time.sleep(1)
+        print("3, 2, 1.")
+        time.sleep(1)
+        print("BOOM!")
+        time.sleep(1)
+        print("You die. :(")
+        time.sleep(1)
+        print("Please try again.")
+        time.sleep(1)
+        print("You survived" ,counter, "choices.")
+        time.sleep(1)
+        again = input("Do you want to play again? ")
+        if again == "yes":
+            time.sleep(2)
+            os.startfile("menu.py")
+        if again == "no":
+            time.sleep(2)
+            exit()
     if choice2 == "2":
+        counter += 1
         #complete
     if choice2 == "3":
+        counter += 1
         #complete
 if choice == "3":
     counter += 1
