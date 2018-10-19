@@ -39,7 +39,34 @@ if choice == "2":
     counter += 1
     print("You shut down your computer and go to your bedroom.")
     time.sleep(1)
-    #complete
+    print("You get into bed and quickly fall asleep.")
+    time.sleep(1)
+    print("You dream that you are in a miltary vehicle going along a desert road.")
+    time.sleep(1)
+    print("Suddenly an explosion shakes the car.")
+    time.sleep(1)
+    print("You are told to stay in the car while the troops you are with jump out to counter attack.")
+    time.sleep(1)
+    print("As the troops leave you sit waiting, then BANG!!")
+    time.sleep(1)
+    print("You are thrown out of the car and you hit the floor with a crash.")
+    time.sleep(1)
+    print("You crawl behind a rock and a few seconds later a missle hits the ground 4 feet form you.")
+    time.sleep(1)
+    print("It says Stark Industries on it.")
+    time.sleep(1)
+    print("""
+1. Stay where you are.
+2. Try and run.
+3. Try to diffuse the missle.
+""")
+    choice2 = input("What do you do? ")
+    if choice2 == "1":
+        #complete
+    if choice2 == "2":
+        #complete
+    if choice2 == "3":
+        #complete
 if choice == "3":
     counter += 1
     print("You get up from your chair and leave the room.")
