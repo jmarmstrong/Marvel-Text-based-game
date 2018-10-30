@@ -1,4 +1,4 @@
-#Ironman game file.
+#Ironman.py game file
 import time
 import os
 counter = 0
@@ -84,10 +84,28 @@ if choice == "2":
             exit()
     if choice2 == "2":
         counter += 1
-        #complete
+        #complete this last.
     if choice2 == "3":
         counter += 1
-        #complete
+        print("You crawl towards the missle and you open the side of the missle with you multi-tool")
+        time.sleep(2)
+        print("You see a green, black and red wire")
+        trime.sleep(2)
+        print("""
+1. Green
+2. Black
+3. Red.
+""")
+        choice3 = input("Which do you cut? ")
+        if choice3 == "1":
+            counter += 1
+            #complete
+        if choice3 == "2":
+            counter += 1
+            #complete
+        if choice3 == "3":
+            counter += 1
+            #complete
 if choice == "3":
     counter += 1
     print("You get up from your chair and leave the room.")
