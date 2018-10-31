@@ -99,13 +99,61 @@ if choice == "2":
         choice3 = input("Which do you cut? ")
         if choice3 == "1":
             counter += 1
-            #complete
+            print("You cut the green wire and YOU explode.")
+            time.sleep(1)
+            print("Not the missle.")
+            time.sleep(1)
+            print("You die. :(")
+            time.sleep(1)
+            print("Please try again.")
+            time.sleep(1)
+            print("You survived" ,counter, "choices.")
+            time.sleep(1)
+            again = input("Do you want to play again? ")
+            if again == "yes":
+                time.sleep(2)
+                os.startfile("menu.py")
+            if again == "no":
+                time.sleep(2)
+                exit()
         if choice3 == "2":
             counter += 1
-            #complete
+            print("You cut the black wire and you turn around...")
+            time.sleep(1)
+            print("You die. :(")
+            time.sleep(1)
+            print("You had coffee that morning.")
+            time.sleep(1)
+            print("Please try again.")
+            time.sleep(1)
+            print("You survived" ,counter, "choices.")
+            time.sleep(1)
+            again = input("Do you want to play again? ")
+            if again == "yes":
+                time.sleep(2)
+                os.startfile("menu.py")
+            if again == "no":
+                time.sleep(2)
+                exit()
         if choice3 == "3":
             counter += 1
-            #complete
+            print("You cut the red wire and...")
+            time.sleep(1)
+            print("You get hit in the face with another missle.")
+            time.sleep(1)
+            print("You die. :(")
+            time.sleep(1)
+            print("Please try again.")
+            time.sleep(1)
+            print("You survived" ,counter, "choices.")
+            time.sleep(1)
+            again = input("Do you want to play again? ")
+            if again == "yes":
+                time.sleep(2)
+                os.startfile("menu.py")
+            if again == "no":
+                time.sleep(2)
+                exit()
 if choice == "3":
     counter += 1
     print("You get up from your chair and leave the room.")
