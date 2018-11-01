@@ -2,7 +2,7 @@
 import time
 import os
 counter = 0
-print("Hello brave player, You have chosen to play as Ironman this particular time.")
+print("Hello brave player, you have chosen to play as Ironman this particular time.")
 time.sleep(2)
 print("You walk into your lab and log on to your computer (top of the range).")
 time.sleep(2)
@@ -16,7 +16,7 @@ print("""
 choice = input("What do you do? ")
 if choice == "1":
     counter += 1
-    print("You open your emails and you see an email from and unknown person.")
+    print("You open your emails and you see an email from an unknown person.")
     time.sleep(1)
     print("You open the email and it says you are already dead.")
     time.sleep(1.5)
@@ -84,7 +84,9 @@ if choice == "2":
             exit()
     if choice2 == "2":
         counter += 1
-        #complete this last.
+        print("You scramble to your feet and take one step...")
+        time.sleep(1)
+        print("BOOM!!!!!!!")
     if choice2 == "3":
         counter += 1
         print("You crawl towards the missle and you open the side of the missle with you multi-tool")
