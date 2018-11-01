@@ -1,4 +1,4 @@
-#Ironman.py game file
+#Ironman.py gamefile
 import time
 import os
 counter = 0
@@ -87,12 +87,18 @@ if choice == "2":
         print("You scramble to your feet and take one step...")
         time.sleep(1)
         print("BOOM!!!!!!!")
+        time.sleep(1)
+        print("You wake up lying on a bed in what looks like a cave.")
+        time.sleep(2)
+        print("You trying to sit up but you feel and pulling from you chest.")
+        time.sleep(2)
+        print("You look down and see wires coming out from under you top.")
     if choice2 == "3":
         counter += 1
-        print("You crawl towards the missle and you open the side of the missle with you multi-tool")
+        print("You crawl towards the missile and you open the side of the missile.")
         time.sleep(2)
         print("You see a green, black and red wire")
-        trime.sleep(2)
+        time.sleep(2)
         print("""
 1. Green
 2. Black
@@ -141,7 +147,7 @@ if choice == "2":
             counter += 1
             print("You cut the red wire and...")
             time.sleep(1)
-            print("You get hit in the face with another missle.")
+            print("You get hit in the face with another missile.")
             time.sleep(1)
             print("You die. :(")
             time.sleep(1)
