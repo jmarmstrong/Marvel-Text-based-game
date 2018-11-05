@@ -1,7 +1,6 @@
 #Ironman.py gamefile
 import time
 import os
-inventory = []
 counter = 0
 print("Hello brave player, you have chosen to play as Ironman this particular time.")
 time.sleep(2)
@@ -94,6 +93,9 @@ if choice == "2":
         print("You trying to sit up but you feel and pulling from you chest.")
         time.sleep(2)
         print("You look down and see wires coming out from under your top.")
+        time.sleep(2)
+        print("You look around and see a man sitting in a chair.")
+        time.sleep(2)
     if choice2 == "3":
         counter += 1
         print("You crawl towards the missile and you open the side of the missile.")
