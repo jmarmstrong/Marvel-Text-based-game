@@ -51,7 +51,7 @@ if choice == "2":
     time.sleep(1)
     print("You are thrown out of the car and you hit the floor with a crash.")
     time.sleep(1)
-    print("You crawl behind a rock and a few seconds later a missle hits the ground 4 feet form you.")
+    print("You crawl behind a rock and a few seconds later a missle hits the ground 4 feet from you.")
     time.sleep(1)
     print("It says Stark Industries on it.")
     time.sleep(1)
@@ -96,6 +96,25 @@ if choice == "2":
         time.sleep(2)
         print("You look around and see a man sitting in a chair.")
         time.sleep(2)
+        print("The man says he is called Ho Yinsen and that you are in a cave in afganistan.")
+        time.sleep(2)
+        print("He says that they will be coming soon because there is something they want you to do.")
+        time.sleep(2)
+        print("A couple of minutes later 5 men turn up at the enterance of the room.")
+        time.sleep(2)
+        print("They say that they want you to build a jericho missle.")
+        time.sleep(2)
+        print("""
+1. Agree
+2. Refuse
+""")
+        choice3 = input("Choose wisely: ")
+        if choice3 == "1":
+            counter += 1
+            #complete
+        if choice3 == "2":
+            counter += 1
+            #complete
     if choice2 == "3":
         counter += 1
         print("You crawl towards the missile and you open the side of the missile.")
