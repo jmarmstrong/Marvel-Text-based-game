@@ -51,14 +51,14 @@ if choice == "2":
     time.sleep(1)
     print("You are thrown out of the car and you hit the floor with a crash.")
     time.sleep(1)
-    print("You crawl behind a rock and a few seconds later a missle hits the ground 4 feet from you.")
+    print("You crawl behind a rock and a few seconds later a missile hits the ground 4 feet from you.")
     time.sleep(1)
     print("It says Stark Industries on it.")
     time.sleep(1)
     print("""
 1. Stay where you are.
 2. Try and run.
-3. Try to diffuse the missle.
+3. Try to diffuse the missile.
 """)
     choice2 = input("What do you do? ")
     if choice2 == "1":
@@ -102,7 +102,7 @@ if choice == "2":
         time.sleep(2)
         print("A couple of minutes later 5 men turn up at the enterance of the room.")
         time.sleep(2)
-        print("They say that they want you to build a jericho missle.")
+        print("They say that they want you to build a jericho missile.")
         time.sleep(2)
         print("""
 1. Agree
@@ -111,7 +111,21 @@ if choice == "2":
         choice3 = input("Choose wisely: ")
         if choice3 == "1":
             counter += 1
-            #complete
+            print("You agree to make the missile and the men give you part for the missile.")
+            time.sleep(2)
+            print("After about ten minutes one of the men comes back into the cave and asks if you would like a coffee.")
+            time.sleep(3)
+            print("""
+1. Accept
+2. Decline
+""")
+            choice4 = input("What do you do? (Think about it carefully): ")
+            if choice4 == "1":
+                print("You accept your coffee and drink it.")
+                time.sleep(2)
+                #complete
+            if choice4 == "2":
+                #complete
         if choice3 == "2":
             counter += 1
             #complete
@@ -119,7 +133,7 @@ if choice == "2":
         counter += 1
         print("You crawl towards the missile and you open the side of the missile.")
         time.sleep(2)
-        print("You see a green, black and red wire")
+        print("You see a green, black and red wire.")
         time.sleep(2)
         print("""
 1. Green
@@ -131,7 +145,7 @@ if choice == "2":
             counter += 1
             print("You cut the green wire and YOU explode.")
             time.sleep(1)
-            print("Not the missle.")
+            print("Not the missile.")
             time.sleep(1)
             print("You die. :(")
             time.sleep(1)
