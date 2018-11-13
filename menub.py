@@ -1,5 +1,8 @@
 import time
 import os
+def ps (text,time):
+    print(text)
+    time.sleep(time)
 print("Hello and wellcome to the decide your own destiny marvel edition.")
 time.sleep(1)
 print("""
@@ -46,6 +49,8 @@ if choice2 == "1":
 1. Tony Stark (Iron Man)
 2. Donald Blake (Thor)
 3. Steve Rogers (Captain America)
+Bonus
+4. The MCU (good guys).
 """)
     choicehero = input("Please choose your hero: ")
     if choicehero == "1":
@@ -54,12 +59,16 @@ if choice2 == "1":
         os.startfile("thor")
     if choicehero == "3":
         os.startfile("cap.py")
+    if choicehero == "4":
+        os.startfile("MCU.py")
 if choice2 == "2":
     print("You have made the right choice. The all consuming and all powerful darkness has chosen you to assist us to an ultimate victory. On this route you will find you have power and abilities you dreamed of as a child. Once again you have made the right choice.")
     print("""
 1. Ultron
 2. loki
 3. Johann Schmidt (Red Skull)
+Bonus
+4. Thanos
 """)
     choicevillan = input("please chose your villan: ")
     if choicevillan == "1":
@@ -68,4 +77,6 @@ if choice2 == "2":
         os.startfile("loki.py")
     if choicevillan == "3":
         os.startfile("rs.py")
+    if choicevillan == "4":
+        os.startfile("The_Mad_Titan.py")
     
