@@ -20,7 +20,7 @@ if choice1 == "3":
     ps("Code specialist and maker of Iron man and Ultron: Joseph Armstrong",2)
     ps("Main code : Python",2)
     ps("Code version: 3.4.3",2)
-    ps("A special thanks to Marvel Studios, Stan Lee, Jack Kirby and Steve Ditko.",4)
+    ps("A special thanks to Marvel Studios, Stan Lee, Jack Kirby and Steve Ditko.",5)
     exit()
 if choice1 == "2":
     ps("JK there are no settings",1)
