@@ -1,4 +1,4 @@
-#Ironman.py gamefile
+#Ironman.py game file
 import time
 import os
 def pp (text,pause):
