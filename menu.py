@@ -31,7 +31,7 @@ if choice1  == "1":
     ps("""
 1. Good
 2. Evil
-"""),1
+""",1)
     choice2 = input("Please enter your side (Beware after this point there is no going back.) : ")
 if choice2 == "1":
     time.sleep(1)
