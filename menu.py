@@ -16,14 +16,15 @@ if choice1 == "4":
     exit()
 if choice1 == "3":
     ps("CREDITS",2)
-    ps("Main designer, marvel specialist, owner and maker of Thor, Loki, Captin America, Red Skull : Oliver Cole.",3)
-    ps("Code specialist and maker of Iron man and Ultron: Joseph Armstrong",2)
+    ps("Main designer, CEO, marvel specialist, maker of Thor and Ironman : Oliver Cole.",2)
+    ps("Code specialist and maker of Menu and Menub: Joseph Armstrong",2)
+    ps("Comedy specialist and maker of Captin America: Emmamuel Andal.",2)
     ps("Main code : Python",2)
     ps("Code version: 3.4.3",2)
-    ps("A special thanks to Marvel Studios, Stan Lee, Jack Kirby and Steve Ditko.",5)
+    ps("A special thanks to Marvel Studios, Stan Lee, Jack Kirby and Steve Ditko For Inspiration.",5)
     exit()
 if choice1 == "2":
-    ps("JK there are no settings",1)
+    ps("Joking there are no settings",1)
     exit()
 if choice1  == "1":
     time.sleep(2)
@@ -52,17 +53,14 @@ if choice2 == "2":
     time.sleep(1)
     ps("You have made the right choice. The all consuming and all powerful darkness has chosen you to assist us to an ultimate victory. On this route you will find you have power and abilities you dreamed of as a child. Once again you have made the right choice",1)
     ps("""
-1. Ultron
-2. Loki
-3. Johann Schmidt (Red Skull)
+1. Doctor DOOM
+2. Magneto
+3. The green goblin
 """,1)
     choicevillan = input("Please choose you villan: ")
     if choicevillan == "1":
-        os.startfile("ultron.py")
+        os.startfile("doom.py")
     if choicevillan == "2":
-        os.startfile("loki.py")
+        os.startfile("mag.py")
     if choicevillan == "3":
-        os.startfile("rs.py")
-        
-        
-    
+        os.startfile("tgg.py")
