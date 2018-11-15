@@ -1,4 +1,4 @@
-#wwmdf start menu.
+#elemental industries menu.py
 import time
 import os
 def ps (text,sleep):
@@ -21,7 +21,17 @@ if choice1 == "3":
     ps("Comedy specialist and maker of Captian America: Emmamuel Andal.",2)
     ps("Main code : Python",2)
     ps("Code version: 3.4.3",2)
-    ps("A special thanks to Marvel Studios, Stan Lee, Jack Kirby and Steve Ditko For Inspiration.",5)
+    ps("""
+A special thanks to Marvel Studios.
+Stan Lee (28 December 1922 - 12 November 2018),
+Jack Kirby (28 August 1917 - 6 February 1994),
+Steve Ditko (2 November 1927 - June 2018) For Inspiration.
+They will forever be remembered.
+All of this is for you.
+The men that showed that imagination really can change the world.
+Excelsior!!
+Now and forever more.
+""",30)
     exit()
 if choice1 == "2":
     ps("Joking there are no settings",1)
@@ -41,7 +51,17 @@ if choice3 == "3":
     ps("Comedy specialist and maker of Captian America: Emmamuel Andal.",2)
     ps("Main code : Python",2)
     ps("Code version: 3.4.3",2)
-    ps("A special thanks to Marvel Studios, Stan Lee, Jack Kirby and Steve Ditko For Inspiration.",5)
+    ps("""
+A special thanks to Marvel Studios.
+Stan Lee (28 December 1922 - 12 November 2018),
+Jack Kirby (28 August 1917 - 6 February 1994),
+Steve Ditko (2 November 1927 - June 2018) For Inspiration.
+They will forever be remembered.
+All of this is for you.
+The men that showed that imagination really can change the world.
+Excelsior!!
+Now and forever more.
+""",30)
     exit()
 if choice3 == "2":
     ps("Joking there are no settings",1)
