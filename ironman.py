@@ -67,7 +67,7 @@ if choice == "2":
         pp("You scramble to your feet and take one step...",1)
         pp("BOOM!!!!!!!",1)
         pp("You wake up lying on a bed in what looks like a cave.",1)
-        pp("You trying to sit up but you feel and pulling from you chest.",1)
+        pp("You trying to sit up but you feel and pulling from your chest.",1)
         pp("You look down and see wires coming out from under your top.",1)
         pp("You look around and see a man sitting in a chair.",1)
         pp("The man says he is called Ho Yinsen and that you are in a cave in afganistan.",1)
@@ -84,6 +84,10 @@ if choice == "2":
             #complete
         if choice4 == "2":
             counter += 1
+            pp("They grab you and shove your head into a water bucket. Seems pointless really.",1)
+            pp("They pull you out and put a bag over your head. Again pointless.",1)
+            pp("They walk you out of the cave and take the bag off.",1)
+            pp("You are dazzeled by the sunlight and you see piles of machinery.",1)
             #complete
     if choice2 == "3":
         counter += 1
@@ -138,6 +142,11 @@ if choice == "3":
     counter += 1
     pp("You get up from your chair and leave the room.",1)
     pp("You walk into the hall and turn on the coffee machine.",1)
+    pp("""
+1. Decaf.
+2. Non Decaf.
+""",1)
+    choicecoffee = input("")
     pp("You grab a mug and turn back to the coffee machine.",1)
     pp("You die. :(",1)
     pp("You were hit in the face with boiling hot coffee.",1)
