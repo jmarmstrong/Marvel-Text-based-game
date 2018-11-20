@@ -1,57 +1,53 @@
 #thorgamefile
 import time
 import os
+def pp (text,pause):
+    print(text)
+    time.sleep(pause)
+def po (pause,openfile):
+    time.sleep(pause)
+    os.startfile(openfile)
 counter = 0
-print("Hello you have chosen to play as Thor in this game.")
-time.sleep(2)
-print("It is a very special day in Asgard, you have been told that you are going to be crowned king tomorrow.")
-time.sleep(4)
-print("""
+pp("Hello you have chosen to play as Thor in this game.",2)
+pp("It is a very special day in Asgard, you have been told that you are going to be crowned king tomorrow.",4)
+pp("""
 1. Accept the news.
 2. Deny the news.
-""")
-choice1 = input("What do you do? ")
+""",2)
+choice1 = input("What do you do?:")
 if choice1 == "1":
     counter += 1
-    print("Congratulations on the honour, Asgard will be happy with its new king.")
-    time.sleep(3)
-    print("You are travelling to the palace the next day.")
-    time.sleep(3)
-    print("Suddenly, there is a massive explosion from the palace!!")
-    print("""
+    pp("Congratulations on the honour, Asgard will be happy with its new king.",3)
+    pp("You are travelling to the palace the next day.",3)
+    pp("Suddenly, there is a massive explosion from the palace!!",1)
+    pp("""
 1. Storm into the palace, ready for a fight.
 2. Go and get reinforcements, then storm the palace.
 3. Go and get a coffee.
-""")
-    choice2 = input("What do you do? ")
+""",1)
+    choice2 = input("What do you do?:")
     if choice2 == "1":
         counter += 1
-        print("You draw your sword, burst through the door and...")
-        time.sleep(2)
-        print("You bellow in rage to see Odin dead, but you don't see the arrow fly from the bow.")
-        time.sleep(4)
-        print("You die. :( ")
-        time.sleep(2)
-        print("Please try again.")
-        time.sleep(2)
-        print("You survived" ,counter, "choices.")
-        time.sleep(3)
-        again = input("Do you want to play again? ")
+        pp("You draw your sword, burst through the door and...",2)
+        pp("You bellow in rage to see Odin dead, but you don't see the arrow fly from the bow.",4)
+        pp("You die. :( ",2)
+        pp("Please try again.",2)
+        pp("You survived" ,counter, "choices.",3)
+        again = input("Do you want to play again?:")
         if again == "yes":
-            time.sleep(2)
-            os.startfile("menu.py")
+            po(2,menu.py)
         if again == "no":
             time.sleep(3)
             exit()
     if choice2 == "2":
         counter += 1
-        print("You have arrived at the royal barracks and you have a choice of troops as king. ")
+        pp("You have arrived at the royal barracks and you have a choice of troops as king. ")
         print("""
 1. 60 troops.
 2. 40 troops.
 3. 20 troops.
 """)
-        choice3 = input("Which do you choose? ")
+        choice3 = input("Which do you choose?:")
         if choice3 == "1":
             counter += 1
             print("All the enemy troops are killed but so are most of your troops. You go for the leader.")
@@ -64,23 +60,19 @@ if choice1 == "1":
 2. No
 """)
             print("You survived" ,counter, "choices.")
-            again = input("Do you want to play again? ")
+            again = input("Do you want to play again?:")
             if again == "yes":
-                time.sleep(2)
-                os.startfile("menub.py")
+                po(2,menu.py)
             if again == "no":
                 time.sleep(3)
                 exit()
         if choice3 == "2":
             counter += 1
-            print("You storm the palace but all your troops are killed and your have to face the leader of the army alone.")
-            time.sleep(3)
-            print("You get stab in the stomach and with your last bit of strength you decapitate the army leader.")
-            time.sleep(4)
-            print("You have died knowing Asgard is safe.")
-            time.sleep(3)
-            print("You survived" ,counter, "choices.")
-            again = input("Do you want to play again? ")
+            pp("You storm the palace but all your troops are killed and your have to face the leader of the army alone.",3)
+            pp("You get stab in the stomach and with your last bit of strength you decapitate the army leader.",4)
+            pp("You have died knowing Asgard is safe.",3)
+            pp("You survived" ,counter, "choices.",1)
+            again = input("Do you want to play again?:")
             if again == "yes":
                 time.sleep(2)
                 os.startfile("menub.py")
