@@ -41,25 +41,23 @@ if choice1 == "1":
             exit()
     if choice2 == "2":
         counter += 1
-        pp("You have arrived at the royal barracks and you have a choice of troops as king. ")
-        print("""
+        pp("You have arrived at the royal barracks and you have a choice of troops as king. ",1)
+        pp("""
 1. 60 troops.
 2. 40 troops.
 3. 20 troops.
-""")
+""",1)
         choice3 = input("Which do you choose?:")
         if choice3 == "1":
             counter += 1
-            print("All the enemy troops are killed but so are most of your troops. You go for the leader.")
-            time.sleep(4)
-            print("You kill the enemy leader and you are crowned king of Asgard.")
-            time.sleep(3)
-            print("Congrats on your victory.")
-            print("""
+            pp("All the enemy troops are killed but so are most of your troops. You go for the leader.",4)
+            pp("You kill the enemy leader and you are crowned king of Asgard.",3)
+            pp("Congrats on your victory.",1)
+            pp("""
 1. Yes
 2. No
-""")
-            print("You survived" ,counter, "choices.")
+""",1)
+            pp("You survived" ,counter, "choices.",1)
             again = input("Do you want to play again?:")
             if again == "yes":
                 po(2,menu.py)
@@ -74,116 +72,84 @@ if choice1 == "1":
             pp("You survived" ,counter, "choices.",1)
             again = input("Do you want to play again?:")
             if again == "yes":
-                time.sleep(2)
-                os.startfile("menub.py")
+                po(2,menu.py)
             if again == "no":
                 time.sleep(3)
                 exit()
         if choice3 == "3":
             counter += 1
-            print("All your troops are killed and so are you.")
-            time.sleep(3)
-            print("GAME OVER")
-            time.sleep(2)
-            print("You survived" ,counter, "choices.")
-            again = input("Do you want to play again? ")
+            pp("All your troops are killed and so are you.",3)
+            pp("GAME OVER",2)
+            pp("You survived" ,counter, "choices.",2)
+            again = input("Do you want to play again?:")
             if again == "yes":
-                time.sleep(2)
-                os.startfile("menu.py")
+                po(2,menu.py)
             if again == "no":
                 time.sleep(3)
                 exit()
     if choice2 == "3":
         counter += 1
-        print("You enjoy your coffee and grab Mjölnir and your shield.")
-        time.sleep(3)
-        print("You are just about to burst through the palace door chewing the chocolate cookie you got free with the coffee and...")
-        time.sleep(6)
-        print("YOU DIE. THE COFFEE WAS POISONED BY DARK ELVES AS REVENGE.")
-        time.sleep(4)
-        print("At least you have died knowing one good thing...")
-        time.sleep(4)
-        print("The cookie was really good.")
-        time.sleep(4)
-        print("You survived" ,counter, "choices.")
+        pp("You enjoy your coffee and grab Mjölnir and your shield.",3)
+        pp("You are just about to burst through the palace door chewing the chocolate cookie you got free with the coffee and...",6)
+        pp("YOU DIE. THE COFFEE WAS POISONED BY DARK ELVES AS REVENGE.",4)
+        pp("At least you have died knowing one good thing...",4)
+        pp("The cookie was really good.",4)
+        pp("You survived" ,counter, "choices.",1)
         again = input("Do you want to play again? ")
         if again == "yes":
-            time.sleep(2)
-            os.startfile("menu.py")
+            po(2,menu.py)
         if again == "no":
             time.sleep(3)
             exit()
 if choice1 == "2":
     counter += 1
-    print("A few hours later you get called to the royal palace and Odin is furious.")
-    time.sleep(2)
-    print("In his rage Odin tears off your armor and bannishes you to Midgard (Earth).")
-    time.sleep(3)
-    print("You wake in a field and Mjölnir is no where to be found.")
-    time.sleep(2)
-    print("You can see two towns in the distance, one to your right and one to your left.")
-    print("""
+    pp("A few hours later you get called to the royal palace and Odin is furious.",2)
+    pp("In his rage Odin tears off your armor and bannishes you to Midgard (Earth).",3)
+    pp("You wake in a field and Mjölnir is no where to be found.",2)
+    pp("You can see two towns in the distance, one to your right and one to your left.",1)
+    pp("""
 1. Left
 2. Right
-""")
+""",1)
     choice4 = input("Which way do you go? ")
     if choice4 == "1":
         counter += 1
-        print("The town you have chosen is about 4 miles away, it will take you about an hour.")
-        time.sleep(4)
-        print("You have reached the town and just before you enter a nearby cafe you...")
-        time.sleep(4)
-        print("You get hit by a car.")
-        time.sleep(2)
-        print("The person that hit in their car offers you their help.")
-        time.sleep(1)
-        print("""
+        pp("The town you have chosen is about 4 miles away, it will take you about an hour.",4)
+        pp("You have reached the town and just before you enter a nearby cafe you...",4
+        pp("You get hit by a car.",2)
+        pp("The person that hit in their car offers you their help.",1)
+        pp("""
 1. Accept their help.
 2. Ignore them and go get a coffee. (Cookie free with a large coffee.)
-""")
+""",1)
         choice5 = input("What do you do? ")
         if choice5 == "1":
             counter += 1
-            print("You have got in the car and you go with the person further into the town.")
-            time.sleep(3)
-            print("The person has taken you to what looks like a lab on the other side of the town.")
-            time.sleep(3)
-            print("Suddenly realising you don't know the person name, you ask for the person's name.")
-            time.sleep(3)
-            print("The person replies, I'm Jane Foster.")
-            time.sleep(2)
-            print("Jane asks you your name.")
-            time.sleep(3)
-            print("""
+            pp("You have got in the car and you go with the person further into the town.",3)
+            pp("The person has taken you to what looks like a lab on the other side of the town.",3)
+            pp("Suddenly realising you don't know the person name, you ask for the person's name.",3)
+            pp("The person replies, I'm Jane Foster.",2)
+            pp("Jane asks you your name.",3)
+            pp("""
 1. Thor, son of Odin.
 2. Donald Blake.
-""")
+""",1)
             choice6 = input("What do you tell her? ")
             if choice6 == "1":
                 counter += 1
-                print("You have told Jane your real name and she suggests that you should take the name, Donald Blake.")
-                time.sleep(5)
-                print("You accept the name and follow Jane into the lab.")
-                time.sleep(3)
-                print("Here Jane shows you her work and explains to you what it means.")
-                time.sleep(3)
-                print("While Jane goes to make a phone call, you are reading about voids and nebulas not taking in a word when two men storm through the door.")
-                time.sleep(6)
-                print("Their sudden appearance startles you and you jump up ready for a fight.")
-                time.sleep(3)
-                print("But the men just stand there and look at you.")
-                time.sleep(3)
-                print("Then they advance and something hits you in the back of the head.")
-                time.sleep(3)
-                print("You have been shot.")
-                time.sleep(3)
-                print("You have died.")
-                time.sleep(3)
-                print("You survived" ,counter, "choices.")
+                pp("You have told Jane your real name and she suggests that you should take the name, Donald Blake.",5)
+                pp("You accept the name and follow Jane into the lab.",3)
+                pp("Here Jane shows you her work and explains to you what it means.",3)
+                pp("While Jane goes to make a phone call, you are reading about voids and nebulas not taking in a word when two men storm through the door.",6)
+                pp("Their sudden appearance startles you and you jump up ready for a fight.",3)
+                pp("But the men just stand there and look at you.",3)
+                pp("Then they advance and something hits you in the back of the head.",3)
+                pp("You have been shot.",3)
+                pp("You have died.",3)
+                pp("You survived" ,counter, "choices.",1)
                 again = input("Do you want to play again? ")
                 if again == "yes":
-                    time.sleep(2)
-                    os.startfile("menu.py")
+                    po(2,menu.py)
                 if again == "no":
                     time.sleep(3)
                     exit()
