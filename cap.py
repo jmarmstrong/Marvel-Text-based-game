@@ -1,34 +1,41 @@
 #Cap.py game file
 import time
 import os
-print("You walk out of the theatre and feel like there is nothing to do, and you start walking down the road.")
-time.sleep(4)
-print ("As you start walking down the road you see someone getting mugged and beaten up. you know what to do! Do you... ")
-print ("""
+def pp (text,pause):
+    print(text)
+    time.sleep(pause)
+def po (pause,openfile):
+    time.sleep(pause)
+    os.startfile(openfile)
+pp("You walk out of the theatre and feel like there is nothing to do, and you start walking down the road.",3)
+pp("As you start walking down the road you see someone getting mugged and beaten up. you know what to do! Do you... ",3)
+pp("""
 1. run over and help?
 2. finish the rest of the popcorn and enjoy the show?
 3. go and get a coffee?
-""")
+""",3)
 choice = input("What do you do? ")
 if choice == "3":
-    print("You think that you should help, but you really like coffee so you leave.")
-    time.sleep(2)
-    print("You make your way through the hood until you reach a crossroad.")
-    time.sleep(4)
-    print("The person that you probably should have helped is probably dead by now due to the fact that you where the only one there to stop it but maybe you can still help them")
-    print("""
+    pp("You think that you should help, but you really like coffee so you leave.",3)
+    pp("You make your way through the hood until you reach a crossroad.",3)
+    pp("The person that you probably should have helped is probably dead by now due to the fact that you where the only one there to stop it but maybe you can still help them",5)
+    pp("""
 1. GO back and help the person.
 2. go left.
 3. go right.
 4. continue to go forwards.
-""")
+""",3)
     choice1 = input("What to do")
     if choice1 == "1":
-        print("You sprint down the road back to the theatre but you are to late")
-        time.sleep(5)
-        print("#FAIL")
-        time.sleep(2)
-        exit()
+        pp("You sprint down the road back to the theatre but you are to late",3)
+        pp("#FAIL",2)
+        again = input("Do you want to play again? ")
+        if again == "yes":
+            time.sleep(2)
+            os.startfile("menub.py")
+        if again == "no":
+            time.sleep(3)
+            exit()
     if choice1 == "2":
         print("You turn left and you see some Nazi zombie ...")
         time.sleep(10)
